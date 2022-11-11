@@ -1,0 +1,95 @@
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(72, 121, 196) ;
+    background-image: linear-gradient(rgb(72, 121, 196), #9198e5);
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 120px;
+}
+h3{
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-indent: 125px;
+}
+.qq p{
+    border-top: 3px solid #ff8500;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.box{
+   display:flex;
+   align-items:center;
+}
+/* 流动式布局，自适应 */
+.line{
+   border-top:1px solid rgb(72, 121, 196);
+   border-style:dotted;
+   flex-grow:1;
+}
+.text{
+   margin:0 10px;
+   letter-spacing: 8px;
+   color:rgb(72, 121, 196) ;
+}
+.ff a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+    background-color: rgb(72, 121, 196) ;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    /* 一个小技巧：单行文字垂直居中的代码，让文字的行高等于盒子的高度 */
+    line-height: 50px;
+}
+
+/* 鼠标经过链接变换背景颜色 */
+.ff a:hover {
+    background-color: #00aaff;
+}
+.nav {
+    height: 41px;
+    border-top: 3px solid #ff8500;
+    border-bottom: 3px solid #edeef0;
+    background-color: rgba(255, 255, 255, 0.867);
+    line-height: 41px;
+    letter-spacing: 3px;
+}
+
+.nav a {
+    /* a 属于行内元素，要指定高度，必须要转换为行内块元素 */
+    display: inline-block;
+    height: 38px;
+    /* 没有指定宽度，此时设置 padding 会使盒子内容之间的距离相同 */
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: end;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+   /* 鼠标经过链接变换背景和字体颜色 */
+.nav a:hover {
+    background-color: rgb(72, 121, 196);
+    color: white;
+}
+.bi{                     
+height: 505px;
+}
+.bi img{
+width: 800px;
+height: 500px;
+float: left;
+}
+.bi dl{
+float: right;
+padding:  40px 200px;
+}
