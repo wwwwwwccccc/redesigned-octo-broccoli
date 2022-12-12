@@ -1,28 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文具</title>
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="css/base.css"/>
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="./css/help-center.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/pen.css">
+    <script src="./js/pen.js"></script>
 </head>
+
 <body>
-    <h2>文具</h2>
-    <hr>
-        <img src="image/pen1.jpg" width="400" height="400">
-        <a href="buy.html" target="_blank">¥15</a>
-        <img src="image/pen2.jpg" width="400" height="400">
-        <a href="buy.html" target="_blank">¥13</a>
-        <img src="image/pen3.jpg" width="400" height="400">
-        <a href="buy.html" target="_blank">¥10</a>
-        <img src="image/pen4.jpg" width="400" height="400">
-        <a href="buy.html" target="_blank">¥8</a>
-        <img src="image/pen5.jpg" width="400" height="400">
-        <a href="buy.html" target="_blank">¥7</a>
-        <img src="image/pen6.jpg" width="400" height="400">
-        <a href="buy.html" target="_blank">¥13</a>
-        <p>-----更多单品敬请期待！-----</p>
+    <div class="container">
+        <div class="title">
+            <p><a href="main.html" target="_blank">加了菜的咸鱼</a></p>
+        </div>
+        <div class="sell">
+            <p>校园周边售卖</p>
+        </div>
+        <div class="button1">
+            <svg width="200" height="60">
+                <rect class="shape" width="200" height="60"></rect>
+                <div class="text"><a href="pen.html">潮流文创</a></div>
+            </svg>
+        </div>
+        <div class="button2">
+            <svg width="200" height="60">
+                <rect class="shape" width="200" height="60"></rect>
+                <div class="text"><a href="huizhang.html">徽章单品</a></div>
+            </svg>
+        </div>
+        <div class="button3">
+            <svg width="200" height="60">
+                <rect class="shape" width="200" height="60"></rect>
+                <div class="text"><a href="shouban.html">创意手办</a></div>
+            </svg>
+        </div>
+        <div class="button4">
+            <svg width="200" height="60">
+                <rect class="shape" width="200" height="60"></rect>
+                <div class="text"><a href="#">
+                        <div class="up">更多服务<div></div>
+                            <p>敬请期待</p>
+                    </a></div>
+            </svg>
+        </div>
+    </div>
+
+    <div id="box">
+        <h2 class="box_head"><span>潮流文创 快来看看</span></h2>
+        <ul>
+        </ul>
+    </div>
+
+    <div id="car" class="car">
+
+        <div class="head_row hid">
+            <div class="check left"> <i class="checkAll">√</i></div>
+            <div class="img left">&nbsp;&nbsp;全选</div>
+            <div class="name left">商品名称</div>
+            <div class="price left">单价</div>
+            <div class="number left">数量</div>
+            <div class="subtotal left">小计</div>
+            <div class="ctrl left">删除</div>
+        </div>
+
+        <div class="car_container"></div>
+
+    </div>
+    <div id="sum_area">
+        <div id="pay" onclick="abc()"><a href="#">去结算</a></div>
+        <div id="pay_amout">合计：<span id="price_num">0</span>元</div>
+    </div>
 </body>
+<script type="text/javascript">
+    function abc() {
+        location.href = 'DingDan.html'
+    }
+</script>
+
 </html>

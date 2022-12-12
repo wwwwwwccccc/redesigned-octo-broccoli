@@ -1,4 +1,186 @@
-.qq p{
-    font-size: 25px;
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+}
+
+.ofh {
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+}
+
+.em {
+    text-indent: 2em;
+}
+
+.p5 {
+    padding: 5px;
+}
+
+.pl50 {
+    padding-left: 50px;
+}
+
+body {
+    background: url(../jiaoda/28.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/*----------------------con-------------------------*/
+.con {
+    width: 960px;
+    padding: 20px;
+    height: auto;
+    margin: 10px auto;
+    background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
+    opacity: 0.8;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*----------------head-----------------*/
+.head {
+    width: 960px;
+    height: auto;
+    margin: auto;
+}
+
+.logo {
+    width: 550px;
+    height: 60px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    line-height: 60px;
+    color: rgb(72, 121, 196);
+    font-family: 华文中宋;
+    caret-color: rgba(255, 255, 255, 0);
+}
+
+.lunbo {
+    width: 920px;
+    height: 350px;
+    margin: 5px auto;
+    overflow: hidden;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    caret-color: rgba(255, 255, 255, 0);
+}
+
+/*----------------main-----------------*/
+.main {
+    width: 920px;
+    height: auto;
+    margin: 10px auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+}
+
+.main h2 {
+    font-size: 23px;
+    line-height: 46px;
+    color: rgb(72, 121, 196);
+    caret-color: rgba(255, 255, 255, 0);
+    font-family: 华文中宋;
+}
+
+.main p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    text-indent: 2em;
+    line-height: 28px;
+}
+
+.main_list {
+    width: 920px;
+    height: auto;
+}
+
+.main_list li {
+    width: 185px;
+    height: 125px;
+    float: left;
+    margin: 10px 22px;
+    border: 3px solid rgba(169, 174, 224, 0.797);
+}
+
+.main_list li:hover {
+    border: 2px solid #ffca2c;
+}
+
+.main_list li img {
+    width: 180px;
+    height: 120px;
+}
+
+.main p {
+    font-family: 微软雅黑;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: black;
+}
+
+/*----------------foot-----------------*/
+.foot {
+    width: 920px;
+    height: 50px;
+    margin: 10px auto;
+    padding-top: 10px;
+    border-top: 3px solid #ff8500;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(72, 121, 196);
+}
+
+.pp {
+    letter-spacing: 5px;
+    font-family: 隶书;
+    font-size: 20px;
+    caret-color: rgba(255, 255, 255, 0);
+}
+
+.qq p {
+    caret-color: rgba(255, 255, 255, 0);
+}
+
+.qq a {
+    text-decoration: none;
+    font-family: 方正舒体;
+    color: rgb(72, 121, 196);
+    font-size: 17px;
     letter-spacing: 3px;
+}
+
+.qq a:hover {
+    color: rgb(0, 122, 102);
 }

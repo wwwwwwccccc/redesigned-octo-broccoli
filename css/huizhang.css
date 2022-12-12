@@ -1,0 +1,561 @@
+body {
+  
+    /* 100%窗口高度 */
+    height: 100vh;
+    /* 径向渐变背景 ellipse表示椭圆 */
+    background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
+}
+
+.container {
+    /* 弹性布局 */
+    display: flex;
+    height: 160px;
+    width: 1520px;
+    margin: 0 auto;
+    box-shadow: 0 15px 10px -15px black;
+    background-image: linear-gradient(rgb(175, 235, 250), #f8f0f0);
+    z-index: 1;
+}
+
+.title a {
+    font-size: 50px;
+    font-family: 方正舒体;
+    position: absolute;
+    margin: 10px 50px;
+    color: rgb(72, 121, 196);
+    caret-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+
+.title a:hover {
+    text-shadow: 0 0 10px rgb(255, 196, 119), 0 0 20px rgb(255, 196, 119), 0 0 30px rgb(255, 196, 119), 0 0 40px rgb(255, 196, 119);
+}
+
+.sell p {
+    font-family: 华文中宋;
+    font-size: 35px;
+    position: absolute;
+    margin: 80px 80px;
+    letter-spacing: 5px;
+    color: rgb(72, 121, 196);
+    caret-color: rgba(255, 255, 255, 0);
+}
+
+.button1 {
+    /* 相对定位 */
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    margin: 40px 400px;
+}
+
+.button2 {
+    /* 相对定位 */
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    margin: 40px 600px;
+}
+
+.button3 {
+    /* 相对定位 */
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    margin: 40px 800px;
+}
+
+.button4 {
+    /* 相对定位 */
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    margin: 40px 1000px;
+}
+
+.shape {
+    /* 取消填充 */
+    fill: none;
+    /* 定义一条线 */
+    stroke: #009ffd;
+    /* 线的厚度 */
+    stroke-width: 6;
+    /* 设置虚线：虚线长度 间距 */
+    stroke-dasharray: 200 400;
+    /* 虚线偏移量 */
+    stroke-dashoffset: -240;
+    /* 过渡效果 */
+    transition: 1s ease;
+}
+
+.text a {
+    /* 绝对定位 居中 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff8500;
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 微软雅黑;
+    text-decoration: none;
+    text-indent: 3px;
+    caret-color: rgba(255, 255, 255, 0);
+}
+
+.text p {
+    position: absolute;
+    margin: 0 -1px;
+}
+
+.up {
+    width: 200px;
+    position: absolute;
+    margin: -50px 0;
+}
+
+/* 鼠标悬停时改变线条样式 */
+.button1:hover .shape {
+    stroke: #06e6a0;
+    stroke-width: 3;
+    stroke-dasharray: 50 0;
+    stroke-dashoffset: 0;
+}
+
+.button2:hover .shape {
+    stroke: #06e6a0;
+    stroke-width: 3;
+    stroke-dasharray: 50 0;
+    stroke-dashoffset: 0;
+}
+
+.button3:hover .shape {
+    stroke: #06e6a0;
+    stroke-width: 3;
+    stroke-dasharray: 50 0;
+    stroke-dashoffset: 0;
+}
+
+.button4:hover .shape {
+    stroke: #06e6a0;
+    stroke-width: 3;
+    stroke-dasharray: 50 0;
+    stroke-dashoffset: 0;
+}
+
+.header {
+    font-size: 12px;
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+    color: #b0b0b0;
+    position: relative;
+    z-index: 20;
+    height: 100px;
+}
+
+.header .container {
+    position: relative;
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header .container .header-logo {
+    width: 93px;
+    margin-top: 26px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    background-color: #ff6700;
+}
+
+.header-title {
+    float: left;
+    margin-top: 26px;
+    font-size: 12px;
+}
+
+.topbar-info {
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+.link {
+    padding: 0 5px;
+    color: #757575;
+    text-decoration: none;
+}
+
+.hid {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.box_head {
+    position: relative;
+    margin: 0;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 华文中宋;
+    color: rgb(72, 121, 196);
+    letter-spacing: 5px;
+    caret-color: rgba(51, 51, 51, 0);
+}
+
+.box_head span {
+    position: absolute;
+    top: -20px;
+    left: 372px;
+    height: 40px;
+    width: 482px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    background-color: #f5f5f500;
+    font-size: 30px;
+}
+
+#box {
+    width: 1240px;
+    margin: 20px auto;
+    position: absolute;
+    margin: 200px 148px;
+}
+
+#box ul {
+    margin-right: -14px;
+    overflow: hidden;
+}
+
+#box li {
+    width: 234px;
+    float: left;
+    margin-right: 14px;
+    padding: 24px 0 20px;
+    background: #FFF;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+.pro_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 18px;
+}
+
+.pro_name {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.pro_name a {
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+}
+
+.pro_name a:hover {
+    color: rgb(196, 48, 48);
+}
+
+.pro_price {
+    color: #ff6700;
+    margin: 10px;
+}
+
+.pro_rank {
+    color: #0f0b0b;
+    margin: 10px;
+}
+
+#box li:hover .add_btn {
+    display: block;
+}
+
+#box li:hover .pro_rank {
+    opacity: 0;
+}
+
+#box li .add_btn:hover {
+    background-color: #f60;
+    color: white;
+}
+
+
+
+.add_btn {
+    height: 22px;
+    position: absolute;
+    width: 122px;
+    bottom: 28px;
+    left: 50%;
+    margin-left: -61px;
+    line-height: 22px;
+    display: none;
+    color: #F60;
+    font-size: 12px;
+    border: 1px solid #f60;
+}
+
+.car {
+    width: 1228px;
+    margin: 20px auto;
+    background: #FFF;
+    position: absolute;
+    margin: 950px 148px;
+
+}
+
+.car .check {
+    width: 50px;
+
+}
+
+.car .check i {
+    color: #fff;
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #e0e0e0;
+    margin-left: 24px;
+    background-color: #fff;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+    font-family: "iconfont";
+}
+
+.i_acity {
+
+    border-color: #ff6700 !important;
+    background-color: #ff6700 !important;
+}
+
+.car .img {
+    width: 190px;
+}
+
+.car .img img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 3px auto;
+}
+
+.car .name {
+    width: 300px;
+}
+
+.car .name span {
+    line-height: 1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.car .price {
+    width: 144px;
+    text-align: right;
+    padding-right: 84px;
+}
+
+.car .price span {
+    color: #ff6700;
+    font-size: 16px;
+}
+
+.car .number {
+    width: 150px;
+}
+
+.car .subtotal {
+    width: 130px;
+
+}
+
+.car .ctrl {
+    width: 105px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.car .ctrl a {
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: 30px auto;
+    line-height: 26px;
+}
+
+.car .ctrl a:hover {
+    color: #FFF;
+    background: #ff6700;
+    border-radius: 50%;
+}
+
+.head_row {
+    height: 70px;
+    line-height: 70px;
+}
+
+.head_row,
+.row {
+    border-bottom: solid 1px #e0e0e0;
+}
+
+.row {
+    height: 86px;
+    line-height: 86px;
+    padding: 15px 0;
+    margin: 0px;
+}
+
+#sum_area {
+    width: 1228px;
+    height: 60px;
+    background: white;
+    margin: 20px auto;
+    position: absolute;
+    margin: 900px 148px;
+}
+
+#sum_area #pay {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    float: right;
+    line-height: 60px;
+    font-size: 19px;
+    background: #FF4B00;
+    color: white;
+}
+
+#pay a {
+    text-decoration: none;
+    color: white;
+}
+
+#pay a:hover {
+    font-size: 22px;
+}
+
+#sum_area #pay_amout {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    float: right;
+    line-height: 60px;
+    font-size: 16px;
+    color: #FF4B00;
+}
+
+#sum_area #pay_amout #price_num {
+    width: 100px;
+    height: 60px;
+    font-size: 25px;
+    color: #FF4B00;
+    /*	float: left;*/
+}
+
+.item_count_i {
+    height: 85px;
+    width: 10%;
+    /*border: 1px solid black;*/
+    float: left;
+    margin-right: 25px;
+}
+
+.num_count {
+    width: 150px;
+    height: 40px;
+    border: 1.2px solid #E0E0E0;
+    float: right;
+    margin-top: 21px;
+
+}
+
+.count_i {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 21px;
+    color: #747474;
+}
+
+.count_i:hover {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 21px;
+    color: #747474;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+
+.c_num {
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: #747474;
+}
+
+.count_d {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    color: #747474;
+}
+
+.count_d:hover {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    color: #747474;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+
+.i_acity2 {
+    border-color: #ff6700 !important;
+    background-color: #ff6700 !important;
+}

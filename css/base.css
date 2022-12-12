@@ -1,5 +1,5 @@
 /* 把我们所有标签的内外边距清零 */
-* {
+*{
     margin: 0;
     padding: 0;
     /* css3盒子模型 */
@@ -28,16 +28,8 @@ button {
     /* 当我们鼠标经过 button 按钮的时候，鼠标变成小手 */
     cursor: pointer
 }
-button,
-input {
-    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
-    /* 默认有灰色边框我们需要手动去掉 */
-    border: 0;
-    outline: none;
-}
-
 body {
+    width: 100% !important;
     /* CSS3 抗锯齿形 让文字显示的更加清晰 */
     -webkit-font-smoothing: antialiased;
     background-color: #fff;

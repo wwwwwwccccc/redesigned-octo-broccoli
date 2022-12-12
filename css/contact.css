@@ -1,0 +1,163 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.a{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    border: #fff 10px solid;
+    background-color: rgba(93, 122, 190, 0.7) ;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.164));
+    z-index: 80;
+    backdrop-filter: blur(8px);
+}
+.b{
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    left: 0;
+    margin: 80px 80px;
+    transition: 1s;
+}
+.b p{
+    text-decoration: none;
+    color: #fff;
+    font-size: 45px;
+    font-family: 方正舒体;
+}
+.b h2{
+    /* 鼠标放开时的动画，第一个值是动画的过渡时间
+    第二个值是延迟一秒后执行动画 */
+    transition: .5s 1s;
+    opacity: 0;
+    color: rgb(30,210,200);
+    font-size: 25px;
+}
+.b span{
+    transition: .5s 1s;
+    color: #fff;
+    font: 500 15px '';
+    font-family: 微软雅黑;
+    position: absolute;
+    top: 70px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.c{
+    position: absolute;
+    top: -130px;
+    right: -240px;
+}
+.d,.e{
+    position: absolute;
+    right: calc(var(--i)*100px);
+    width: calc(var(--w)*40px);
+    height: 600px;
+    overflow: hidden;
+    border-radius: 100px;
+    transform: rotateZ(220deg) translate(0,0);
+    background: #f3a34e;
+    transition: .5s .5s;
+}
+.d:nth-child(2){
+    background: rgb(74, 141, 242);
+}
+.e{
+    left: -470px;
+    top: -140px;
+    width: 70px;
+    background-color: #9aa2f7;
+}
+.a:hover .c div{
+    /* 设置延迟动画 */
+    transition: .5s calc(var(--i)*.1s);
+    /* 移动的轨迹 */
+    transform: rotateZ(220deg) translate(-200px,400px);
+}
+.a:hover .b{
+    transition: 1s .5s;
+    left: 480px;
+}
+.a:hover .b span{
+    transition: 1s .5s;
+    top: 140px;
+}
+.a:hover .b h2{
+    transition: 1s .5s;
+    opacity: 1;
+}
+.f{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-image: url("../image/weixin.jpg");
+    background-size: cover;
+    margin: 100px 130px;
+    opacity: 0;
+    transition: .5s;
+}
+.a:hover .f{
+    transition: 1s 1.3s;
+    opacity: 1;
+}
+body{
+/* 100%窗口高度 */
+height: 100vh;
+/* 径向渐变背景 ellipse表示椭圆 */
+background: radial-gradient(ellipse at center,#fffeea 0%,#fffeea 35%,#b7e8eb 100%);
+/* 溢出隐藏 */
+overflow: hidden;
+}
+/* 海平面 */
+.sea{
+width: 100%;
+height: 5%;
+background-color: #015871;
+/* 绝对定位 底部 */
+position: absolute;
+left: 0;
+bottom: 0;
+}
+.wave{
+/* 这里的背景用的是svg文件 */
+background: url("../image/wave.svg") repeat-x;
+width: 6400px;
+height: 198px;
+/* 绝对定位 */
+position: absolute;
+top: -198px;
+/* 执行波动动画：动画名 时长 贝塞尔曲线 无限次播放 */
+animation: wave 7s cubic-bezier(0.36,0.45,0.63,0.53) infinite;
+}
+.wave:nth-child(2){
+top: -175px;
+/* 执行波动+上下浮动动画 */
+animation: wave 7s cubic-bezier(0.36,0.45,0.63,0.53) infinite,swell 7s ease infinite;
+animation-delay: -0.2s;
+}
+
+/* 定义动画 */
+/* 波动动画 */
+@keyframes wave {
+0%{
+margin-left: 0;
+}
+100%{
+margin-left: -1600px;
+}
+}
+/* 上下浮动动画 */
+@keyframes swell {
+0%,100%{
+transform: translate(0,-25px);
+}
+50%{
+transform: translate(0,5px);
+}
+}
